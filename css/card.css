@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,10 +12,10 @@ body {
 /* Início da estilização do card */
 
 .card {
-    position: relative; 
+    position: relative;
     width: 21.938rem;
     height: 15.938rem;
-    margin: 4rem;
+    margin: 4rem; /* utilizado só para a criação */
     background:
         linear-gradient(#323264, #323264) padding-box,
         linear-gradient(50deg, #6FFFE6, #20FF8A) border-box;
@@ -22,25 +23,36 @@ body {
     border-radius: 10px;
     color: #EBEBFF;
     box-sizing: border-box;
-    overflow: hidden; 
+    overflow: hidden;
+    background-size: 300%;
+    animation: AnimarBorda 8s linear alternate-reverse infinite;
+}
+
+.card:hover{
+    box-shadow: 10px 0 30px #6FFFE6,
+    -10px 0 30px #20FF8A;
 }
 
 .card::before {
     content: "";
     position: absolute;
-    top: -1rem; 
+    top: -1rem;
     left: -42px;
     width: 23.063rem;
     height: 16.438rem;
     background: url(../img/html5.png) center/cover no-repeat;
-    opacity: 0.2; 
-    z-index: 0; 
-    border-radius: inherit; 
+    opacity: 0.2;
+    z-index: 0;
+    border-radius: inherit;
 }
 
-.card > * {
-    position: relative; 
-    z-index: 1;
+@keyframes AnimarBorda{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
 }
 
 .box {
@@ -49,10 +61,7 @@ body {
 }
 
 span {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding: 0.2rem 0.5rem;
     background: linear-gradient(45deg, #20FF8A, #6FFFE6);
     color: #191932;
     font-weight: 700;
@@ -70,8 +79,7 @@ p {
     color: #9191B9;
     font-weight: 500;
     font-size: 16px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .containerButton {
@@ -80,13 +88,10 @@ p {
     align-items: end;
 }
 
-.boxButton {
-    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
-    padding: 1px;
-    border-radius: 10px;
-}
-
 .colorButton {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
     width: 7.813rem;
     height: 2.438rem;
     background:
@@ -96,10 +101,49 @@ p {
     border-radius: 10px;
     color: #EBEBFF;
     box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.textButton {
     color: #EBEBFF;
     font-weight: 500;
     font-size: 16px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: none;
+    width: 100%;
+    height: 100%;
+    transition: color 0.5s;
+}
+
+.colorButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.colorButton:hover::before {
+    opacity: 1;
+}
+
+.colorButton:hover{
+    box-shadow: 5px 0 20px #6FFFE6,
+    -5px 0 20px #20FF8A;
+}
+
+.colorButton .textButton:hover {
+    color: #191932;
 }
 
 /* Fim da estilização do card */
-
