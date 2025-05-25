@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #191932;
+    font-family: "Poppins", sans-serif;
+    padding-top: 5rem;
+}
+
+/* Inicio Carrossel 3D */
+
+.container {
+    width: 100%;
+    padding-left: -10rem;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.container .caixa {
+    position: absolute;
+    width: 12.5rem;
+    height: 15.625rem;
+    top: 30%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(30000px);
+    animation: autoRun 100s linear infinite;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(30000px) rotateX(5deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(30000px) rotateX(5deg) rotateY(360deg);
+    }
+}
+
+.container .caixa .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+        rotateY(calc((var(--position)-1)* (360 / var(--quantity)) * 1deg)) translateZ(550px);
+}
+
+.container .caixa .item .card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fim Carrossel  */
+
+
+/* Inicio Card */
+
+.card {
+    position: relative; 
+    width: 21.938rem;
+    height: 15.938rem;
+    margin: 4rem;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(50deg, #6FFFE6, #20FF8A) border-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    color: #EBEBFF;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -1rem; 
+    left: -42px;
+    width: 23.063rem;
+    height: 16.438rem;
+    background: url(../img/html5.png) center/cover no-repeat;
+    opacity: 0.2; 
+    z-index: 0; 
+    border-radius: inherit; 
+}
+
+
+/* .card>* {
+    position: relative;
+    z-index: 1;
+} */
+
+.box {
+    display: flex;
+    justify-content: end;
+}
+
+span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+    color: #191932;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 0.5rem;
+}
+
+p {
+    color: #9191B9;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.containerButton {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.colorButton {
+    width: 7.813rem;
+    height: 2.438rem;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #20FF8A, #6FFFE6) border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #EBEBFF;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.colorButton {
+    all: unset; 
+    cursor: pointer;
+    position: relative;
+    width: 7.813rem;
+    height: 2.438rem;
+    color: #EBEBFF;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #20FF8A, #6FFFE6) border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 16px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.colorButton .textButton{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none; 
+    width: 100%;
+    height: 100%;
+    color: #EBEBFF;
+}
