@@ -5,6 +5,7 @@ body {
 }
 
 .navbar {
+
     background-color: #323264;
     padding: 0.75rem 1rem;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -76,16 +77,8 @@ li {
 }
 
 .user-icon {
-    font-size: 3rem;
-    color: white;
-    transition: color 0.4s ease;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-left: 1.5rem;
-    cursor: pointer;
-}
-
-.user-icon:hover {
-    color: #ff4fc1;
+    width: 48px;
+    height: 48px;
 }
