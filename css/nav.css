@@ -1,10 +1,11 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #191932;
 }
 
 .navbar {
-    background-color: #2d2d61;
+    background-color: #323264;
     padding: 0.75rem 1rem;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -46,17 +47,32 @@ li {
 }
 
 .nav-link:hover {
-    color: #ff4fc1;
+    color: #f75ec1;
 }
 
-.nav-link.active {
-    color: #FF00A5;
+.nav-link-active {
+    content: '';
+    background: linear-gradient(45deg, #FF00A5, #ff4fc1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     font-size: 1.5rem;
     font-weight: bold;
+    position: relative;
     text-decoration: underline;
-    text-underline-offset: 6px;
 }
 
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(45deg, #FF00A5, #ff4fc1);
+    border-radius: 2px;
+}
 
 .user-icon {
     font-size: 3rem;
