@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -11,13 +10,72 @@ body {
     overflow: hidden;
 }
 
+/* Inicio Carrossel 3D */
+
+@keyframes autoRun {
+    from {
+        transform: perspective(30000px) rotateX(5deg) rotateY(0deg);
+    }
+
+    to {
+        transform: perspective(30000px) rotateX(5deg) rotateY(360deg);
+    }
+}
+
+.container {
+    width: 100vw;
+    /* padding-left: -10rem; */
+    height: 100vh;
+    /* overflow: hidden; */
+    position: relative;
+    /* background-color: red; */
+}
+
+.container .caixa {
+    position: absolute;
+    width: 12.5rem;
+    height: 15.625rem;
+    /* top: 30%;
+    left: calc(50% - 110px); */
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-style: preserve-3d;
+    transform: perspective(20000px);
+    animation: autoRun 90s linear infinite;
+}
+
+.container .caixa .item {
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+        rotateY(calc((var(--position)-1)* (360 / var(--quantity)) * 1deg)) translateZ(800px);
+}
+
+.container .caixa .item .card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item {
+    transition: z-index 0.3s;
+    backface-visibility: hidden;
+}
+
+
+
+/* Fim Carrossel  */
+
+
 /* Inicio Card */
 
 .card {
     position: relative;
     width: 21.938rem;
     height: 15.938rem;
-    margin: 4rem; /* utilizado só para a criação */
+    margin: 4rem;
+    /* utilizado só para a criação */
     background:
         linear-gradient(#323264, #323264) padding-box,
         linear-gradient(50deg, #6FFFE6, #20FF8A) border-box;
@@ -48,12 +106,12 @@ body {
     border-radius: inherit;
 }
 
-
-@keyframes AnimarBorda{
-    0%{
+@keyframes AnimarBorda {
+    0% {
         background-position: 0;
     }
-    100%{
+
+    100% {
         background-position: 300%;
     }
 }
@@ -122,6 +180,7 @@ p {
     width: 100%;
     height: 100%;
     transition: color 0.5s;
+    /* background-color: aquamarine; */
 }
 
 .colorButton::before {
@@ -141,7 +200,6 @@ p {
     opacity: 1;
 }
 
-
 .colorButton:hover {
     box-shadow: 5px 0 20px #6FFFE6,
         -5px 0 20px #20FF8A;
@@ -151,7 +209,6 @@ p {
 .colorButton:hover .textButton {
     color: #191932;
 }
-
 
 
 /* Fim da estilização do card */
