@@ -26,7 +26,7 @@
     position: relative;
 }
 
-.select-wrapper select {    
+.select-wrapper select {
     appearance: none;
     background-color: #2d2750;
     color: #aaa;
@@ -46,7 +46,8 @@
     color: #00ffbf;
     font-size: 22px;
     pointer-events: none;
-    background: none; /* CORRIGIDO */
+    background: none;
+    /* CORRIGIDO */
 }
 
 /* pesquisa */
@@ -73,7 +74,8 @@
     transform: translateY(-50%);
     color: #ff00d4;
     font-size: 22px;
-    background: none; /* CORRIGIDO */
+    background: none;
+    /* CORRIGIDO */
 }
 
 /* indicadores (lado direito) */
@@ -88,12 +90,19 @@
     margin-left: 1.5rem;
     background: none;
     gap: 0.5rem;
+        color: #EBEBFF;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background: none;
+    text-shadow: 5px 0 15px #FFCC4D,
+        -5px 0 20px #FFAC33;
+    -webkit-text-stroke: 1px #FFCC4D;
 }
 
 
 .item-indicador img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     vertical-align: middle;
     background: none;
 }
@@ -104,13 +113,21 @@
     margin-left: 1.5rem;
     background: none;
     gap: 0.5rem;
+    color: #EBEBFF;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background: none;
+    text-shadow: 5px 0 15px #FF91D1,
+        -5px 0 20px #FF20EE;
+    -webkit-text-stroke: 1px #FF91D1;
 }
 
 .item-indicadorstreak img {
-    width: 36px;
-    height: 44px;
+    width: 40px;
+    height: 48px;
     vertical-align: middle;
     background: none;
+    margin-bottom: 0.5rem;
 }
 
 .item-indicadorvidas {
@@ -119,11 +136,18 @@
     margin-left: 1.5rem;
     background: none;
     gap: 0.5rem;
+    color: #EBEBFF;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background: none;
+    text-shadow: 5px 0 15px #20FF8A,
+        -5px 0 20px #6FFFE6;
+    -webkit-text-stroke: 1px #20FF8A;
 }
 
 .item-indicadorvidas img {
-    width: 44px;
-    height: 40px;
+    width: 52px;
+    height: 48px;
     vertical-align: middle;
     background: none;
 }
@@ -135,13 +159,4 @@
     background: none;
     gap: 0.5rem;
     margin-right: 5.8rem;
-}
-
-
-.numerobarra {
-    color: #EBEBFF;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 0;
-    background: none;
 }

@@ -5,13 +5,13 @@ body {
 }
 
 .navbar {
-
     background-color: #323264;
     padding: 0.75rem 1rem;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,6 +22,9 @@ body {
 
 .logo img {
     height: 32px;
+    display: flex;
+    align-items: start;
+    margin-left: 1rem;
 }
 
 .nav-menu {
@@ -42,7 +45,7 @@ li {
 .nav-link {
     color: #f1f1f1;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
     transition: color 0.4s ease;
 }
@@ -58,7 +61,7 @@ li {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
     position: relative;
     text-decoration: underline;
@@ -81,4 +84,5 @@ li {
     justify-content: center;
     width: 48px;
     height: 48px;
+    margin-right: 1.5rem;
 }
