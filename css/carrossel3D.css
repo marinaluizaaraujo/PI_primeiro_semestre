@@ -115,7 +115,7 @@ body {
     justify-content: end;
 }
 
-span {
+.spanCard {
     padding: 0.2rem 0.5rem;
     background: linear-gradient(45deg, #20FF8A, #6FFFE6);
     color: #191932;
@@ -124,13 +124,13 @@ span {
     border-radius: 10px;
 }
 
-h5 {
+.card-title  {
     font-weight: 700;
     font-size: 20px;
     padding-top: 0.5rem;
 }
 
-p {
+.card-text {
     color: #9191B9;
     font-weight: 500;
     font-size: 16px;
