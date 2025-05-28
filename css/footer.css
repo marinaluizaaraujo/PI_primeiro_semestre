@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    
+  }
+  
+  .footer {
+    position: relative;
+    background-color: #181A35;
+    color: white;
+    padding: 50px 20px 30px;
+    overflow: hidden; /* Garante que a pseudo-elemento não transborde */
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 480px;
+    height: 1000px;
+    background: url('../img/mascote.png') no-repeat bottom ;
+    background-size: contain;
+    opacity: 0.09; /* Ajuste a opacidade como quiser */
+    z-index: 0; /* Coloca atrás do conteúdo */
+  }
+  
+  /* Para garantir que o conteúdo fique acima da imagem */
+  .footer * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  
+  .slogan {
+    color: #c2c2c2;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .footer-links h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 6px 0;
+  }
+  
+  .footer-links a {
+    color: #c2c2c2;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-actions p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    box-align: center;
+    justify-content: center;
+    font-weight: 400;
+  }
+  
+  .highlight {
+    color: #28FF93;
+  }
+  
+  .pink {
+    color: #FF2AE9;
+  }
+
+  .buttons {
+    margin: 10px 0;
+    display: flex;
+    gap: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    border-radius: 10px;  
+  }
+  
+  .btn.pink {
+    background-color: #323264;
+    color: #FF2AE9;
+  }
+  
+  .btn.outline {
+    background-color: #323264;
+    color: #20FF8A;
+  }
+  .btn.outline::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;             
+    left: 0;           
+    width: 100%;        
+    height: 100%;      
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+    z-index: -1;        
+    opacity: 0;         
+    transition: opacity 1s ease; 
+    border-radius: 10px; 
+}
+.btn.outline:hover::before {
+  opacity: 1;
+  border-radius: 10px; 
+
+}
+.btn.pink::before {
+  content: ''; 
+  position: absolute; 
+  top: 0;             
+  left: 0;            
+  width: 100%;        
+  height: 100%;       
+  background: linear-gradient(45deg, #FF20EE, #FF91D1); 
+  z-index: -1;        
+  opacity: 0;        
+  transition: opacity 1s ease; 
+}
+.btn.pink:hover::before {
+opacity: 1;
+border-radius: 10px; 
+
+}
+  .buttons .btn.pink:hover {
+    background-color: #191932;
+    color: white;
+}
+  .buttons .btn.outline:hover {
+    background-color: #191932; 
+    color: white;
+
+}
+ .btn.pink:hover {
+  border-radius: 10px; 
+  box-shadow: 5px 0 20px #FF91D1,     
+              -5px 0 20px #FF20EE;     
+}
+
+.btn.outline:hover {
+  border-radius: 10px; 
+ box-shadow: 5px 0 20px #6FFFE6,      
+             -5px 0 20px #20FF8A;     
+}
+
+  .social {
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10px;
+  }
+  
+  .social h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .social a {
+    text-decoration: none;
+    color: #cccccc;
+    margin-right: 12px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social a:hover {
+    color: #00ffe7;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  .img-logo{
+    width: 250px;
+  }
