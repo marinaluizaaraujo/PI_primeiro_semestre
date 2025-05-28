@@ -14,42 +14,38 @@ body {
 
 @keyframes autoRun {
     from {
-        transform: perspective(30000px) rotateX(5deg) rotateY(0deg);
+        transform: perspective(20000px) rotateX(5deg) rotateY(0deg);
     }
 
     to {
-        transform: perspective(30000px) rotateX(5deg) rotateY(360deg);
+        transform: perspective(20000px) rotateX(5deg) rotateY(360deg);
     }
 }
 
 .container {
-    width: 100vw;
-    /* padding-left: -10rem; */
+    width: 110vw;
     height: 100vh;
-    /* overflow: hidden; */
     position: relative;
-    /* background-color: red; */
 }
 
 .container .caixa {
     position: absolute;
     width: 12.5rem;
     height: 15.625rem;
-    /* top: 30%;
-    left: calc(50% - 110px); */
     top: 20%;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     transform-style: preserve-3d;
-    transform: perspective(20000px);
+    transform: perspective(2000px);
     animation: autoRun 90s linear infinite;
 }
 
+
 .container .caixa .item {
     position: absolute;
-    inset: 0 0 0 0;
-    transform:
-        rotateY(calc((var(--position)-1)* (360 / var(--quantity)) * 1deg)) translateZ(800px);
+    inset: 0;
+    /* transform-style: preserve-3d; */
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(700px);
 }
 
 .container .caixa .item .card {
@@ -62,8 +58,6 @@ body {
     transition: z-index 0.3s;
     backface-visibility: hidden;
 }
-
-
 
 /* Fim Carrossel  */
 
