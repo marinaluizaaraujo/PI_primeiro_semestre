@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modal Login */
+.modal {
+    width: 100vw;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #161E3A;
+    color: #EBEBFF;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    width: 45vw;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+}
