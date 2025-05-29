@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,17 +10,53 @@
     justify-content: center;
 }
 
+.modal-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+    height: 70vh;
+    padding-top: 3rem;
+    /* background-color: antiquewhite; */
+}
+
+.LogoParaCadastro {
+    width: 10vw;
+    margin-bottom: 1rem;
+}
+
 .modal-content {
     background-color: #161E3A;
     color: #EBEBFF;
     font-family: "Poppins", sans-serif;
     border-radius: 10px;
-    width: 45vw;
 }
 
 .modal-header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     border: none;
+}
+
+.modal-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    padding-left: 1rem;
+    width: 55%;
+    display: flex;
+    justify-content:end ;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+}
+
+.icone {
+    transition: 0.5s;
+}
+
+.icone:hover {
+    filter: drop-shadow(2px 2px 6px rgb(255, 32, 238));
 }
