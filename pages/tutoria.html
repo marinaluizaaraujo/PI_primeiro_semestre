@@ -33,6 +33,59 @@
             </div>
         </div>
     </nav>
+    <div class="container">
+        <!-- Cabeçalho -->
+ 
+   <!-- Caixa do exercício -->
+   <div class="exercise-box">
+     <h2>Está com dificuldades em Python: <strong>Aula 5 – While?</strong></h2>
+     <h3>Exercicio 4:</h3>
+     <form action="post">
+       <textarea placeholder="Crie um programa que peça para o usuário digitar um número entre 1 e 10.   Enquanto o número digitado não estiver nesse intervalo, o programa deve continuar pedindo um novo número">
+     </textarea>
+     </form>
+   </div>
+ 
+   <!-- Caixa de recompensa -->
+   <div class="reward-box">
+     <h2>Defina o valor da Recompensa</h2>
+     <p class="reward-info">
+       Ofereça uma quantia de moedas pra incentivar alguém mais experiente em <strong>Python</strong><br>
+       Para te ajudar com alguma dúvida ou com uma atividade específica de um curso. <br>  
+       Se a resposta for marcada como <strong>útil</strong>, as moedas irão direto para quem te ajudou!
+     </p>
+ 
+        <div class="reward-main">
+       <div class="coin-img"></div>
+ 
+       <div class="counter">
+         <button class="radiusTop" onclick="changeAmount(1)">+</button>
+         <div id="amount">50</div>
+         <button class="radiusLow" onclick="changeAmount(-1)">−</button>
+       </div>
+ 
+       <div class="coin-info">
+         <h3>Moedas</h3>
+         <a href="#">Adquirir Mais Moedas</a>
+         <small>🪙 135</small>
+       </div>
+     </div>
+     
+ 
+     <div class="buttons">
+       <button class="cancel">Cancelar</button>
+       <button class="confirm">Pedir ajuda</button>
+     </div>
+       <script>
+     let amount = 50;
+     const amountEl = document.getElementById("amount");
+ 
+     function changeAmount(change) {
+       amount = Math.max(0, amount + change);
+       amountEl.textContent = amount;
+     }
+   </script>
+   </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

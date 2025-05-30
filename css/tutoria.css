@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #191932;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .container {
+    max-width: 100%;
+    width: 90%;
+    height: 1500px;
+  }
+  
+  /* Cabeçalho */
+  .header {
+    color: #d0d0ff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Caixa do exercício */
+  .exercise-box {
+    background-color: #2e2e5f;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .exercise-box h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .exercise-box textarea{
+    background-color: #23234a;
+    padding: 1rem;
+    width: 75%;
+    height: 180px;
+    border-radius: 8px;
+    color: #d0d0e0;
+    font-size: 1.5rem;
+    border: none;
+  }
+  .exercise-box textarea:hover{
+   border: 2px solid #20FF8A;
+   transition: 0.5s;
+  }
+  
+  /* Caixa de recompensa */
+  .reward-box {
+    background-color: #2e2e5f;
+    border-radius: 10px;
+    padding: 2rem;
+    font-size: 20px;
+  }
+  
+  .reward-box h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reward-info {
+    font-size: 1.8rem;
+    color: #cfcfe6;
+    margin-bottom: 3rem;
+    justify-content: right;
+  }
+  
+  
+  /* Conteúdo da recompensa */
+  .reward-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .coin-img, .counter,.reward-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  
+  /* Moeda */
+  .coin-img {
+    width: 200px;
+    height: 200px;
+    background: url('../img/Moedão.png') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  
+  /* Caixa do contador */
+  .counter {
+    background-color: #0f0f1f;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 60px;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 0.5rem;
+    margin-right: 200px;
+  }
+  
+  .counter button {
+    background-color: #1D2344;
+    color: #fff;
+    border: none;
+    font-size: 35px;
+    width: 60px;
+    height: 190px;
+    margin: 30px;
+    cursor: pointer;
+  }
+  .radiusTop{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .radiusLow{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .amount{
+    margin: 50px;
+  }
+  
+  /* Texto à direita da moeda */
+  .coin-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: right;
+    text-align: left;
+    gap: 0.4rem;
+  }
+  
+  .coin-info h3 {
+  
+    font-size: 6rem;
+    margin: 10px;
+    color: #e6e6ff;
+    gap: 0.4rem;
+  }
+  
+  .coin-info a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .coin-info small {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1rem;
+    background-color: #1c1c3a;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    color: #FFD700;
+    text-align: center;
+    font-weight: bold;
+  }
+  /* Botões */
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .cancel, .confirm {
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border-radius: 10px; 
+      
+  }
+  
+  .cancel {
+    background-color: transparent;
+    border: 2px solid #FF20EE;
+    color: #FF20EE;
+  }
+  
+  .confirm {
+    background-color: transparent;
+    border: 2px solid #20FF8A;
+    color: #20FF8A;
+  }
+  .confirm::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;             
+    left: 0;           
+    width: 100%;        
+    height: 100%;      
+    z-index: -1;        
+    opacity: 0;         
+    transition: opacity 1s ease; 
+    border-radius: 10px; 
+  }
+  .confirm:hover::before {
+  opacity: 1;
+  border-radius: 10px; 
+  
+  }
+  .cancel::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;             
+    left: 0;            
+    width: 100%;        
+    height: 100%;       
+    z-index: -1;        
+    opacity: 0;        
+    transition: opacity 1s ease; 
+  }
+  .cancel:hover::before {
+  opacity: 1;
+  border-radius: 10px; 
+  
+  }
+  .buttons .cancel:hover {
+    background: linear-gradient(45deg, #FF20EE, #FF91D1); 
+    color: white;
+  
+  } 
+  .buttons .confirm:hover {
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+    color: white;
+  
+  }
+  .confirm:hover{
+    border-radius: 10px; 
+    box-shadow: 5px 0 20px #6FFFE6,      
+                -5px 0 20px #20FF8A;   
+  }
+  .cancel:hover{
+    border-radius: 10px; 
+    box-shadow: 5px 0 20px #FF91D1,     
+                -5px 0 20px #FF20EE;  
+  }
