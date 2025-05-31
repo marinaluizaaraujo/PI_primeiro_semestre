@@ -22,14 +22,14 @@
 
 <body>
 
-    <!-- Modal Cadastro -->
-    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    <!-- Modal cadastro -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
         tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <img src="../img/logo.png" alt="Logo Codevo" class="logoCodevoModal">
             <div class="modal-content caixaCadastro">
                 <div class="modal-header modalsHeader">
-                    <h1 class="modal-title tituloCadastro" id="exampleModalToggleLabel">Cadastro</h1>
+                    <h1 class="modal-title tituloCadastro" id="exampleModalToggleLabel2">Cadastro</h1>
                     <button type="button" class="botao" data-bs-dismiss="modal" aria-label="Close">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" class="icone"
@@ -48,7 +48,7 @@
                     </button>
                 </div>
                 <div class=" modalsContainer">
-                    <aside class="conteudoLateral">
+                    <aside class="conteudoLateralCadastro">
                         <form action="">
                             <label for="" class="label">Nome:</label>
                             <br>
@@ -64,13 +64,14 @@
                             <br>
                             <div class="divBtn">
                                 <a href="../pages/home.html" class="btns">Criar Conta</a>
-                                <a href="#" class="links" data-bs-target="#exampleModalToggle2"
-                                    data-bs-toggle="modal">Já Possuo uma Conta</a>
+                                <a href="#" class="links" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Já
+                                    Possuo uma Conta</a>
                             </div>
                         </form>
                     </aside>
-                    <div class="ladoDireito">
+                    <div class="ladoDireitoCadastro">
                         <button type="button" class="tipos">
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
                                 viewBox="0 0 256 256" class="icon">
                                 <path
@@ -106,17 +107,17 @@
 
 
     <!-- Modal Login -->
-    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
         tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <img src="../img/logo.png" alt="Logo Codevo" class="logoCodevoModal">
             <div class="modal-content caixaLogin">
                 <div class="modal-header modalsHeader">
-                    <h1 class="modal-title tituloLogin " id="exampleModalToggleLabel2">Login</h1>
+                    <h1 class="modal-title tituloLogin " id="exampleModalToggleLabel">Login</h1>
                     <button type="button" class="botao" data-bs-dismiss="modal" aria-label="Close">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 256 256"
-                            class="icone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" class="icone"
+                            viewBox="0 0 256 256">
                             <defs>
                                 <linearGradient id="gradienteFechar" x1="0%" y1="0%" x2="100%" y2="100%">
                                     <stop offset="0%" stop-color="#FF91D1" />
@@ -125,13 +126,13 @@
                             </defs>
                             <path
                                 d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
-                                class="icone">
-                            </path>
+                                fill="url(#gradienteFechar)" stroke="url(#gradienteFechar)" stroke-width="12"
+                                class="icone" />
                         </svg>
                     </button>
                 </div>
                 <div class=" modalsContainer">
-                    <aside class="conteudoLateral">
+                    <aside class="conteudoLateralLogin">
                         <form action="">
                             <label for="" class="label">Email:</label>
                             <br>
@@ -144,13 +145,13 @@
                             <div class="divBtn">
                                 <a href="../pages/home.html" class="btns">Login</a>
                                 <a href="#" class="links"> Esqueci a Senha</a>
-                                <a href="#" class="links" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                                <a href="#" class="links" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
                                     Criar uma
                                     Conta</a>
                             </div>
                         </form>
                     </aside>
-                    <div class="ladoDireito">
+                    <div class="ladoDireitoLogin">
                         <button type="button" class="tipos">
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
@@ -185,7 +186,7 @@
             </div>
         </div>
     </div>
-
+    
 
     <!-- Botão para Abrir o Modal-->
     <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Open first

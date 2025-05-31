@@ -63,14 +63,8 @@
 .modalsContainer {
     display: flex;
     flex-direction: row;
-}
-
-.conteudoLateral {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 2rem;
+    align-items: center;
+    height: 100%;
 }
 
 .label {
@@ -80,29 +74,36 @@
     padding-left: 0.5rem;
     margin-bottom: 0.2rem;
 }
-
 .inputs {
     background-color: #161E3A;
-    border: 2px solid #20FF8A;
+    color: #BFCEFF;
     opacity: 0.2;
     margin-bottom: 2rem;
+    padding-left: 1rem;
     border-radius: 10px;
     width: 30rem;
     height: 3.125rem;
     transition: 0.5s;
 }
 
+.inputs:focus {
+    opacity: 1;
+    outline: none;
+    background-color: #161E3A;
+}
+
 .inputs:hover {
-    border: 2px solid #20FF8A;
     opacity: 1;
     background-color: #161E3A;
 }
 
 .divBtn {
-    width: 100%;
+    width: 35%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    box-sizing: content-box;
 }
 
 .btns {
@@ -110,22 +111,18 @@
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     margin-bottom: 1.5rem;
-    color: #20FF8A;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 15.375rem;
     height: 3.063rem;
-    border: 2px solid #20FF8A;
     border-radius: 10px;
     opacity: 0.8;
     transition: 1s;
 }
 
 .btns:hover {
-    border: 2px solid #20FF8A;
-    background-color: #20FF8A;
     color: #161E3A;
     opacity: 1;
 }
@@ -140,18 +137,7 @@
 }
 
 .divBtn .links:hover {
-    color: #20FF8A;
     font-size: 18px;
-}
-
-.ladoDireito {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-    border-left: 2px solid #D9D9D9;
-    z-index: 1;
 }
 
 .tipos {
@@ -171,8 +157,6 @@
 }
 
 .tipos:hover {
-    border: 2px solid #20FF8A;
-    background-color: #20FF8A;
     color: #161E3A;
     transition: 0.8s;
 }
@@ -181,6 +165,7 @@
     fill: #161E3A;
 }
 
+
 /* Modal Login */
 
 .caixaLogin {
@@ -188,7 +173,7 @@
     background-color: #323264;
     color: #EBEBFF;
     font-family: "Poppins", sans-serif;
-    height: 69vh;
+    height: 85vh;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -197,16 +182,17 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 64%;
     transform: translate(-50%, -50%);
     background-image: url(../img/mascoteTransparente.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 60%;
+    width: 73%;
     height: 100%;
     opacity: 0.07;
     z-index: 0;
 }
+
 
 .tituloLogin {
     font-family: "Poppins", sans-serif;
@@ -216,6 +202,62 @@
     width: 55%;
     display: flex;
     justify-content: end;
+}
+
+.conteudoLateralLogin {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.inputsLogin {
+    color: #BFCEFF;
+    border: 2px solid #20FF8A;
+}
+
+.inputsLogin:focus {
+    border: 2px solid #20FF8A;
+    box-shadow: 2px 2px 20px 2px #6FFFE6;
+}
+
+.inputsLogin:hover {
+    border: 2px solid #20FF8A;
+    box-shadow: 2px 2px 20px 2px #6FFFE6;
+}
+
+.btnLogin {
+    color: #20FF8A;
+    border: 2px solid #20FF8A;
+}
+
+.btnLogin:hover {
+    border: 2px solid #20FF8A;
+    background-color: #20FF8A;
+    box-shadow: 2px 2px 30px 5px #6FFFE6;
+}
+
+.divBtn .linksLogin:hover {
+    color: #20FF8A;
+}
+
+.ladoDireitoLogin {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    border-left: 2px solid #D9D9D9;
+    z-index: 1;
+}
+
+.tiposLogin:hover {
+    border: 2px solid #20FF8A;
+    background-color: #20FF8A;
+    box-shadow: 2px 2px 30px 5px #6FFFE6;
 }
 
 /* Cadastro */
@@ -233,13 +275,13 @@
 .caixaCadastro::before {
     content: "";
     position: absolute;
-    top: 60%;
-    left: 70%;
+    top: 50%;
+    left: 64%;
     transform: translate(-50%, -50%);
     background-image: url(../img/mascoteTransparente.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 60%;
+    width: 73%;
     height: 100%;
     opacity: 0.07;
     z-index: 0;
@@ -253,4 +295,58 @@
     width: 60%;
     display: flex;
     justify-content: end;
+}
+
+.conteudoLateralCadastro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 2rem;
+}
+
+.inputsCadastro {
+    border: 2px solid #FF20EE;
+}
+
+.inputsCadastro:focus {
+    border: 2px solid #FF20EE;
+    box-shadow: 2px 2px 20px 2px #FF91D1;
+}
+
+.inputsCadastro:hover {
+    border: 2px solid #FF20EE;
+    box-shadow: 2px 2px 20px 2px #FF91D1;
+}
+
+.btnCadastro {
+    color: #FF20EE;
+    border: 2px solid #FF20EE;
+}
+
+.btnCadastro:hover {
+    border: 2px solid #FF20EE;
+    background-color: #FF20EE;
+    box-shadow: 2px 2px 30px 5px #FF91D1;
+}
+
+.divBtn .linksCadastro:hover {
+    color: #FF20EE;
+}
+
+.ladoDireitoCadastro {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.6rem;
+    border-left: 2px solid #D9D9D9;
+    z-index: 1;
+}
+
+.tiposCadastro:hover {
+    border: 2px solid #FF20EE;
+    background-color: #FF20EE;
+    box-shadow: 2px 2px 30px 5px #FF91D1;
 }

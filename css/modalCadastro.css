@@ -63,14 +63,8 @@
 .modalsContainer {
     display: flex;
     flex-direction: row;
-}
-
-.conteudoLateral {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    padding-left: 2rem;
+    align-items: center;
+    height: 100%;
 }
 
 .label {
@@ -99,10 +93,12 @@
 }
 
 .divBtn {
-    width: 100%;
+    width: 35%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: fixed;
+    box-sizing: content-box;
 }
 
 .btns {
@@ -142,16 +138,6 @@
 .divBtn .links:hover {
     color: #20FF8A;
     font-size: 18px;
-}
-
-.ladoDireito {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-    border-left: 2px solid #D9D9D9;
-    z-index: 1;
 }
 
 .tipos {
@@ -196,13 +182,13 @@
 .caixaCadastro::before {
     content: "";
     position: absolute;
-    top: 60%;
-    left: 70%;
+    top: 50%;
+    left: 64%;
     transform: translate(-50%, -50%);
     background-image: url(../img/mascoteTransparente.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 60%;
+    width: 73%;
     height: 100%;
     opacity: 0.07;
     z-index: 0;
@@ -218,6 +204,25 @@
     justify-content: end;
 }
 
+.conteudoLateralCadastro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 2rem;
+}
+
+.ladoDireitoCadastro {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.6rem;
+    border-left: 2px solid #D9D9D9;
+    z-index: 1;
+}
+
 
 /* Modal Login */
 
@@ -226,7 +231,7 @@
     background-color: #323264;
     color: #EBEBFF;
     font-family: "Poppins", sans-serif;
-    height: 69vh;
+    height: 85vh;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -235,16 +240,17 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 64%;
     transform: translate(-50%, -50%);
     background-image: url(../img/mascoteTransparente.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 60%;
+    width: 73%;
     height: 100%;
     opacity: 0.07;
     z-index: 0;
 }
+
 
 .tituloLogin {
     font-family: "Poppins", sans-serif;
@@ -254,4 +260,24 @@
     width: 55%;
     display: flex;
     justify-content: end;
+}
+
+.conteudoLateralLogin {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+.ladoDireitoLogin {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    border-left: 2px solid #D9D9D9;
+    z-index: 1;
 }
