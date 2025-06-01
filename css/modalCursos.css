@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal {
+    width: 100vw;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #161E3A;
+    color: #EBEBFF;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    width: 45vw;
+}
+
+.modal-header {
+    background-color: #323264;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+}
+
+.modal-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 1rem;
+}
+
+.botao {
+    background-color: transparent;
+    border: none;
+}
+
+.icone {
+    transition: 0.5s;
+}
+
+.icone:hover {
+    filter: drop-shadow(2px 2px 6px rgb(255, 32, 238));
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+.paragrafos {
+    padding-top: 1rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    font-size: 20px;
+}
+
+.modal-footer {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 7rem;
+}
+
+.colorButtonModal {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    width: 15.375rem;
+    height: 3.063rem;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #20FF8A, #6FFFE6) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.textButtonModal {
+    display: inline-block;
+    color: #20FF8A;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: none;
+    width: 100%;
+    height: 100%;
+    transition: color 0.5s;
+}
+
+.colorButtonModal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.colorButtonModal:hover::before {
+    opacity: 1;
+}
+
+
+.colorButtonModal:hover {
+    box-shadow: 5px 0 20px #6FFFE6,
+        -5px 0 20px #20FF8A;
+
+}
+
+.colorButtonModal:hover .textButtonModal {
+    color: #191932;
+    font-weight: 500;
+}
