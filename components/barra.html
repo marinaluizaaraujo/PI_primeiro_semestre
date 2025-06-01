@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+    <link rel="stylesheet" href="../css/barra.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Barra</title>
+</head>
+
+<body>
+    <div class="barra">
+        <!-- Lado esquerdo -->
+        <div class="filtros">
+            <div class="select-wrapper">
+                <select>
+                    <option disabled selected>Filtrar</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Nuvem</option>
+                    <option>Nenhum</option>
+                </select>
+                <i class="ph ph-caret-down icon-select"></i>
+            </div>
+
+            <div class="pesquisa">
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar" />
+                <i class="ph ph-magnifying-glass icon-pesquisa" id="botao-pesquisa"></i>
+            </div>
+        </div>
+
+        <!-- Lado direito -->
+        <div class="indicadores">
+            <div class="item-indicadorstreak">
+                <img src="../img/Streak.png" alt="Streak">
+                <h1 class="numerobarra">21</h1>
+            </div>
+            <div class="item-indicadorvidas">
+                <img src="../img/vidas.png" alt="Vidas">
+                <h1 class="numerobarra">3</h1>
+            </div>
+            <div class="item-indicador">
+                <img src="../img/coin.png" alt="Coin">
+                <h1 class="numerobarra">1.788</h1>
+            </div>
+            <div class="item-indicadorloja">
+                <img src="../img/loja.png" alt="Loja">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

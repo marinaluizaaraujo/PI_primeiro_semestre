@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo_icone.png">
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/barra.css">
+    <link rel="stylesheet" href="../css/exemploAtividade.css">
+
+    <!-- Fonts do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Codevo</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Logo Codevo">
+            </a>
+            <ul class="nav-menu d-flex mb-0">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="cursos.html" class="nav-link-active">Cursos</a></li>
+                <li><a href="forum.html" class="nav-link">Fórum</a></li>
+                <li><a href="tutoria.html" class="nav-link">Tutoria</a></li>
+            </ul>
+
+            <div class="user-icon">
+                <img src="../img/perfil.png" alt="Perfil">
+            </div>
+        </div>
+    </nav>
+    <div class="barra">
+        <!-- Lado esquerdo -->
+        <div class="filtros">
+            <div class="select-wrapper">
+                <select>
+                    <option disabled selected>Filtrar</option>
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Nuvem</option>
+                    <option>Nenhum</option>
+                </select>
+                <i class="ph ph-caret-down icon-select"></i>
+            </div>
+
+            <div class="pesquisa">
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar" />
+                <i class="ph ph-magnifying-glass icon-pesquisa" id="botao-pesquisa"></i>
+            </div>
+        </div>
+
+        <!-- Lado direito -->
+        <div class="indicadores">
+            <div class="item-indicadorstreak">
+                <img src="../img/Streak.png" alt="Streak">
+                <h1 class="numerobarra">21</h1>
+            </div>
+            <div class="item-indicadorvidas">
+                <img src="../img/vidas.png" alt="Vidas">
+                <h1 class="numerobarra">3</h1>
+            </div>
+            <div class="item-indicador">
+                <img src="../img/coin.png" alt="Coin">
+                <h1 class="numerobarra">1.788</h1>
+            </div>
+            <div class="item-indicadorloja">
+                <img src="../img/loja.png" alt="Loja">
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <h1>Python - Aula 5 : While </h1>
+            <h2>Exercicio 4 :</h2>
+            <section class="box">
+                Crie um programa que peça para o usuário digitar um número entre 1 e 10. <br>
+                Enquanto o número digitado não estiver nesse intervalo, o programa deve continuar pedindo um novo
+                número.
+            </section>
+        </div>
+        <div class="container">
+            <div class="box">
+                <section class="alnhar">
+                    <div class="caixa caixaM"> </div>
+                    <span class="sinais">
+                        =
+                    </span>
+                    <div class="caixa caixaP"> </div>
+                </section>
+
+                <section class="alnhar">
+                    <div class="caixa caixaM"> </div>
+                    <div class="caixa caixaM"> </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#9191B9" viewBox="0 0 256 256"
+                        class="sinais">
+                        <path
+                            d="M210.84,205.13a12,12,0,0,1-16,5.71l-152-72a12,12,0,0,1,0-21.68l152-72a12,12,0,1,1,10.27,21.69L76,128l129.1,61.15A12,12,0,0,1,210.84,205.13Z">
+                        </path>
+                    </svg>
+                    <div class="caixa caixaP"> </div>
+                    <div class="caixa caixaP"> </div>
+                    <div class="caixa caixaM"> </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#9191B9" viewBox="0 0 256 256"
+                        class="sinais">
+                        <path
+                            d="M228,128a12,12,0,0,1-6.86,10.84l-152,72a12,12,0,0,1-10.27-21.69L188,128,58.87,66.85A12,12,0,0,1,69.14,45.16l152,72A12,12,0,0,1,228,128Z">
+                        </path>
+                    </svg>
+                    <div class="caixa caixaP"> </div>
+                    <span class="sinais">
+                        :
+                    </span>
+                </section>
+
+                <section class="alnhar espaco">
+                    <div class="caixa caixaM"> </div>
+                    <span class="sinais">
+                        =
+                    </span>
+                    <div class="caixa caixaP"> </div>
+                    <span class="sinais">
+                        ( "
+                    </span>
+                    <div class="caixa caixaG "> </div>
+                    <span class="sinais">
+                        " ) )
+                    </span>
+                </section>
+
+            </div>
+            <section class="box container-box">
+                <span class="terminal-span"> Terminal : <br>
+                    <span class="terminal-span-sinal ">></span>
+                </span>
+            </section>
+            <section class=" alinhar-espaco-top ">
+                <div class="envolver1">
+                    <div class=" caixaM colorCaixa colorCaixaText1" draggable="true"> Var</div>
+                    <div class=" caixaM colorCaixa colorCaixaText2" draggable="true"> while</div>
+                    <div class=" caixaP colorCaixa colorCaixaText2" draggable="true"> or</div>
+                    <div class=" caixaP colorCaixa colorCaixaText3" draggable="true"> Nº </div>
+                    <div class=" caixaM colorCaixa colorCaixaText4" draggable="true"> Literal </div>
+                    <div class=" caixaP colorCaixa colorCaixaText5" draggable="true"> int </div>
+                    <div class=" caixaM colorCaixa colorCaixaText5" draggable="true"> input </div>
+                    <input type="text" placeholder="Texto" class="  colorCaixa colorCaixaText6 input"
+                        draggable="true" />
+                </div>
+                <div class="envolver2">
+                    <span class="sinais">
+                        |
+                    </span>
+                    <div class=" caixaP  colorCaixaPlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FFFFFF"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class=" caixaP  colorCaixaAjuda">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FFFFFF"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M176,232a8,8,0,0,1-8,8H88a8,8,0,0,1,0-16h80A8,8,0,0,1,176,232Zm40-128a87.55,87.55,0,0,1-33.64,69.21A16.24,16.24,0,0,0,176,186v6a16,16,0,0,1-16,16H96a16,16,0,0,1-16-16v-6a16,16,0,0,0-6.23-12.66A87.59,87.59,0,0,1,40,104.49C39.74,56.83,78.26,17.14,125.88,16A88,88,0,0,1,216,104Zm-32.11-9.34a57.6,57.6,0,0,0-46.56-46.55,8,8,0,0,0-2.66,15.78c16.57,2.79,30.63,16.85,33.44,33.45A8,8,0,0,0,176,104a9,9,0,0,0,1.35-.11A8,8,0,0,0,183.89,94.66Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <section class="alnhar alinharBotoes">
+                <button class="btnsAula btnsAulaVoltar">Voltar</button>
+                <button class="btnsAula btnsAulaProxima">Próximo</button>
+            </section>
+        </div>
+
+        <div id="alertaCustom" style="display: none;" class="meu-alerta"></div>
+    </main>
+
+
+    <!-- JS arrastar e soltar-->
+    <script src="../js/exemploAtividade.js"></script>
+</body>
+
+</html>

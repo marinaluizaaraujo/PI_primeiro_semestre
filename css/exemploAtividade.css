@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #EBEBFF;
+    background-color: #191932;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.container {
+    background-color: #323264;
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+h2 {
+    color: #CDD6F4;
+}
+
+.box {
+    background-color: #161E3A;
+    color: #9191B9;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.container-box {
+    margin-top: 2rem;
+    min-height: 40vh;
+}
+
+.alnhar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.espaco {
+    padding-left: 2rem;
+}
+
+.caixa {
+    height: 3.25rem;
+    border: 2px solid #9191B9;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: inset 0 12px 0 rgba(50, 50, 100, 0.5);
+    margin-right: 1rem;
+}
+
+.caixaM {
+    width: 6.125rem;
+}
+
+.sinais {
+    margin-right: 1rem;
+    color: #9191B9;
+    font-size: 42px;
+}
+
+.caixaP {
+    width: 3.438rem;
+}
+
+.caixaG {
+    width: 24.25rem;
+}
+
+.terminal-span {
+    font-size: 24px;
+    font-weight: 600;
+    color: #CDD6F4;
+}
+
+.terminal-span-sinal {
+    font-size: 32px;
+    font-weight: 600;
+    color: #9191B9;
+}
+
+.alinhar-espaco-top {
+    margin-top: 1rem;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.envolver1{
+    width: 75%;
+    height: auto;
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+}
+
+.envolver2{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.colorCaixa {
+    height: 3.25rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: #EBEBFF;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input::placeholder {
+    color: #40A02B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    /* width: 13rem; */
+}
+
+.colorCaixaText1 {
+    color: #9191B9;
+}
+
+.colorCaixaText2 {
+    color: #8839EF;
+}
+
+.colorCaixaText3 {
+    color: #EF9F76;
+    text-decoration: underline;
+}
+
+.colorCaixaText4 {
+    color: #04A5E5;
+    text-decoration: underline;
+}
+
+.colorCaixaText5 {
+    color: #FFAE3C;
+}
+
+.colorCaixaText6 {
+    color: #40A02B;
+    text-decoration: underline;
+    width: 10rem;
+}
+
+.colorCaixaPlay {
+    background: linear-gradient(50deg, #20FF8A, #6FFFE6);
+    height: 3.25rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.colorCaixaAjuda {
+    background: linear-gradient(50deg, #FFAC33, #FFE8B6);
+    height: 3.25rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.alinharBotoes {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+}
+
+.btnsAula {
+    position: relative;
+    width: 12.5rem;
+    height: 4.378rem;
+    font-size: 32px;
+    font-weight: 700;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    border-image-slice: 1;
+    z-index: 0;
+    transition: 1s;
+}
+
+.btnsAula::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.btnsAulaProxima {
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #20FF8A, #6FFFE6) border-box;
+    color: #20FF8A;
+}
+
+.btnsAulaProxima::before {
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+}
+
+.btnsAulaProxima:hover::before {
+    opacity: 1;
+    color: #161E3A;
+}
+
+.btnsAulaProxima:hover {
+    color: #161E3A;
+    box-shadow: 5px 0 20px #6FFFE6,
+        -5px 0 20px #20FF8A;
+}
+
+.btnsAulaVoltar {
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #FF20EE, #FF91D1) border-box;
+    color: #FF20EE;
+}
+
+.btnsAulaVoltar::before {
+    background: linear-gradient(45deg, #FF20EE, #FF91D1);
+}
+
+.btnsAulaVoltar:hover::before {
+    opacity: 1;
+    color: #161E3A;
+}
+
+.btnsAulaVoltar:hover {
+    color: #161E3A;
+    box-shadow: 5px 0 20px #FF20EE,
+        -5px 0 20px #FF91D1;
+}
+
+.meu-alerta {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF20EE;
+    color: #161E3A;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 0 20px #FF20EE,
+        -5px 0 20px #FF91D1;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}
