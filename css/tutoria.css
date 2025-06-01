@@ -7,8 +7,7 @@
 body {
     background-color: #191932;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .container {
@@ -16,6 +15,10 @@ body {
     width: 90%;
     height: 1500px;
     margin-top: 3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* Cabeçalho */

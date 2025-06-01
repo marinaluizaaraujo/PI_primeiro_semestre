@@ -27,11 +27,8 @@ body {
 .conteudogeral {
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
     margin-top: 8rem;
-=======
     margin-top: 5rem;
->>>>>>> 7df23b671d92277840a6a7d1115bbbf7edd4945d
     gap: 1rem;
 }
 
@@ -240,11 +237,8 @@ body {
 .titulo3 {
     color: #EBEBFF;
     margin-left: 9rem;
-<<<<<<< HEAD
     margin-top: 6rem;
-=======
     margin-top: 5rem;
->>>>>>> 7df23b671d92277840a6a7d1115bbbf7edd4945d
     margin-bottom: 0;
 }
 
@@ -258,7 +252,6 @@ body {
     display: flex;
     text-align: center;
     font-size: 3.5rem;
-<<<<<<< HEAD
 }
 
 .titulo6 {
@@ -271,13 +264,11 @@ body {
 
 .parte3 {
     margin-top: -22rem;
-=======
     margin-left: 5rem;
 }
 
 .parte3 {
     margin-top: -18rem;
->>>>>>> 7df23b671d92277840a6a7d1115bbbf7edd4945d
     width: 100vw;
     gap: 10rem;
     display: flex;
@@ -286,7 +277,6 @@ body {
     align-items: center;
 }
 
-<<<<<<< HEAD
 .textos2 {
     display: flex;
     flex-direction: column;
@@ -378,7 +368,8 @@ body {
 
 .accordion-button:not(.collapsed)::after {
     filter: none;
-=======
+}
+
 .textos2{
     display: flex;
     flex-direction: column;
@@ -387,5 +378,4 @@ body {
 .customizacaomascote{
     width: 600px;
     height: auto;
->>>>>>> 7df23b671d92277840a6a7d1115bbbf7edd4945d
 }
