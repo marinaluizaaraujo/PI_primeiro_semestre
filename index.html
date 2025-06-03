@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codevo</title>
+    <!-- boostrap começo e final tem outro-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- phosphor-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+
+    <!-- Css  -->
+    <link class="iconlink" rel="icon" href="img/logo_icone.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/carrossel3D.css">
+    <link rel="stylesheet" href="css/modalCursos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/modalLogin.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- javascript começo e no final tem outro -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Codevo">
+            </a>
+            <ul class="nav-menu d-flex mb-0">
+                <li><a href="pages/home.html" class="nav-link">Home</a></li>
+                <li><a href="pages/cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="pages/forum.html" class="nav-link">Fórum</a></li>
+                <li><a href="pages/tutoria.html" class="nav-link">Tutoria</a></li>
+            </ul>
+
+            <div class="user-icon">
+                <img src="img/perfil.png" alt="Perfil">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="conteudogeral">
+        <div class="conteudoesquerda">
+            <img class="mascote" src="img/mascote3d.png" alt="mascotecodevo">
+        </div>
+        <div class="conteudodireita">
+            <img class="logotexto" src="img/logo.png" alt="logocodevo">
+            <h1 class="textocentro">Aprenda a programar com desafios
+                rápidos e fâceis, com ajuda coletiva e muito mais! </h1>
+            <div class="divbotao">
+                <a href="#" class="corbotao">
+                    <span class="textobotao" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                        Login
+                    </span>
+                </a>
+                <a href="#" class="corbotaorosa">
+                    <span class="textobotaorosa" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        Cadastro
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo2">
+        <h1 class="titulo2"><span class="tituloverde">Conheça</span> <span class="titulobranco">nossos</span> <span
+                class="titulorosa">Cursos</span></h1>
+        <h1 class="textocentro">Diversas linguagens de programação, marcação e lógica, tudo organizado pra quem quer
+            começar com o pé direito.
+            Aprenda do básico ao avançado, no seu ritmo e com a comunidade ao lado.</h1>
+    </div>
+
+    <div class="parte2">
+        <h1 class="titulo3">Mais procurados</h1>
+
+
+        <!-- Carrossel 3D -->
+        <div class="container">
+            <div class="caixa" style="--quantity: 10">
+                <div class="item" style="--position: 1">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 2">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 3">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 4">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 5">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 6">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 7">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 8">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 9">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item" style="--position: 10">
+                    <div class="card mb-3 card3D" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="box">
+                                <span class="spanCard">
+                                    Front-End
+                                </span>
+                            </div>
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">Aprenda o basico para o desenvolvimento Front-End</p>
+                            <div class="containerButton">
+                                <button type="button" class=" colorButton " data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    <span class="textButton">
+                                        Iniciar
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="parte3">
+            <div class="textos2">
+                <h1 class="titulo4">
+                    <span class="titulobranco">Pratique um pouco por dia</span>
+                </h1>
+
+                <h1 class="titulo5">
+                    e <span class="tituloverde">evolua</span> <span class="titulobranco"> no seu </span><span
+                        class="titulorosa">ritmo</span>
+                </h1>
+                <h1 class="textocentro2">Lições curtas, desafios interativos e prática diária pra você evoluir sem
+                    pressa. Com constância, o código vira hábito!</h1>
+            </div>
+            <div class="mascote2">
+                <img class="customizacaomascote" src="img/mascote3d.png" alt="mascote">
+            </div>
+        </div>
+
+        <!-- Perguntas Frequentes -->
+        <div class="parte4">
+            <h1 class="titulo6">Perguntas Frequentes</h1>
+        </div>
+        <div class="accordioncustom">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Como o Codevo me ensina a programar?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">O Codevo utiliza uma abordagem gamificada e interativa para ensinar
+                            diversas linguagens e lógica de programação. A plataforma oferece cursos organizados por
+                            níveis (iniciante, intermediário e avançado), com lições práticas, exercícios e projetos.
+                            Além disso, elementos como streaks diários (sequência de dias consecutivos de uso),
+                            recompensas por progresso e um sistema de pontos mantêm o aprendizado motivador e engajador.
+                            A interface se adapta à sua faixa etária, tornando a experiência mais personalizada.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            O que ganho ao completar atividades?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Ao concluir atividades na plataforma, você obtém: <br>
+                            - Pontos que podem ser trocados por certificados, personalizações de perfil e outros
+                            benefícios.<br>
+                            - Progresso na trilha de aprendizagem, com acesso a conteúdos mais avançados.<br>
+                            - Além disso, seu desempenho é reconhecido por meio de medalhas e conquistas visíveis em seu
+                            perfil.<br>
+                            - E é claro, o principal, conhecimento prático em diversas linguagens, essencial para
+                            desenvolvimento web.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Como funciona a tutoria?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A tutoria no Codevo funciona como um sistema de troca de
+                            conhecimento por moedas virtuais – as mesmas que você usa na loja!
+                            <br>
+                            Onde estudantes e tutores negociam diretamente o valor do serviço. Veja como funciona:
+                            <br><br>
+                            <strong> Para estudantes: </strong><br>
+
+                            - Cria a dúvida, define quanto pagar e escolhe a melhor proposta.<br>
+
+                            <strong> Para tutores: </strong><br>
+
+                            - Veem as dúvidas, oferecem respostas e recebem moedas.<br>
+
+                            <strong> Filtros de qualidade: </strong><br>
+
+                            - Escolha o nível do tutor: Iniciante, Intermediário, Avançado ou Expert.<br>
+
+                            - Tutores melhores costumam custar mais.<br>
+
+                            <strong> Dicas: </strong><br>
+
+                            - Use tutores iniciantes para dúvidas simples e experts para questões complexas.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            O fórum é só pra dúvidas e discussões sobre a Codevo?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Não! O fórum é um espaço colaborativo para: <br>
+                            - Dúvidas técnicas sobre lógica, linguagens de programação e desenvolvimento web. <br>
+                            - Compartilhamento de projetos e feedback da comunidade. <br>
+                            - Discussões sobre tendências, carreira e oportunidades na área de tecnologia. <br>
+                            - Categorias específicas como "Dicas", "Tutoriais" e "Networking" e “Off Topic”. <br>
+
+                            - O Fórum terá uma avaliação do tipo “thumbs up”, portanto interações úteis no fórum também
+                            geram pontos e contribuem para sua reputação na plataforma. Quanto mais “Thumbs up”, maior a
+                            reputação adquirida.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header CabecalhoModal">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Curso de HTML</h1>
+                    <button type="button" class="botao" data-bs-dismiss="modal" aria-label="Close">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="icone"
+                            viewBox="0 0 256 256">
+                            <defs>
+                                <linearGradient id="gradienteFechar" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF91D1" />
+                                    <stop offset="100%" stop-color="#FF20EE" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+                                fill="url(#gradienteFechar)" stroke="url(#gradienteFechar)" stroke-width="12"
+                                class="icone" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="paragrafos">Este curso aborda a linguagem de marcação usada na construção de sites, o
+                        <span class="negrito">HTML.</span>
+                        Neste curso você aprenderá a estruturar páginas. Ideal para iniciantes que querem dar os
+                        primeiros passos no desenvolvimento web.
+                    </p>
+                    <p class="negrito paragrafos">
+                        Após a conclusão deste curso você tera conhecimento aprofundado na linguagem de marcação,
+                        esencial no Front-End!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class=" colorButtonModal ">
+                        <span class="textButtonModal">
+                            Iniciar Curso
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal cadastro -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <img src="img/logo.png" alt="Logo Codevo" class="logoCodevoModal">
+            <div class="modal-content caixaCadastro">
+                <div class="modal-header modalsHeader">
+                    <h1 class="modal-title tituloCadastro" id="exampleModalToggleLabel2">Cadastro</h1>
+                    <button type="button" class="botao" data-bs-dismiss="modal" aria-label="Close">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" class="icone"
+                            viewBox="0 0 256 256">
+                            <defs>
+                                <linearGradient id="gradienteFechar" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF91D1" />
+                                    <stop offset="100%" stop-color="#FF20EE" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+                                fill="url(#gradienteFechar)" stroke="url(#gradienteFechar)" stroke-width="12"
+                                class="icone" />
+                        </svg>
+                    </button>
+                </div>
+                <div class=" modalsContainer">
+                    <aside class="conteudoLateralCadastro">
+                        <form action="">
+                            <label for="nome" class="label">Nome:</label>
+                            <br>
+                            <input type="text" id="nome" class="inputsCadastro inputs">
+                            <br>
+                            <label for="emailCadstro" class="label">Email:</label>
+                            <br>
+                            <input type="text" id="emailCadstro" class="inputsCadastro inputs">
+                            <br>
+                            <label for="senhaCadastro" class="label">Senha:</label>
+                            <br>
+                            <input type="text" id="senhaCadastro" class="inputsCadastro inputs">
+                            <br>
+                            <div class="divBtn">
+                                <a href="pages/home.html" class="btnCadastro btns">Criar Conta</a>
+                                <a href="#" class="links linksCadastro" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Já
+                                    Possuo uma Conta</a>
+                            </div>
+                        </form>
+                    </aside>
+                    <div class="ladoDireitoCadastro">
+                        <button type="button" class="tipos tiposCadastro">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
+                                viewBox="0 0 256 256" class="icon">
+                                <path
+                                    d="M228,128a100,100,0,1,1-22.86-63.64,12,12,0,0,1-18.51,15.28A76,76,0,1,0,203.05,140H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128Z">
+                                </path>
+                            </svg>
+
+                            Continuar com o Google
+                        </button>
+                        <button type="button" class="tipos tiposCadastro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="" fill="#CDD6F4"
+                                viewBox="0 0 256 256" class="icon">
+                                <path
+                                    d="M224,128A96,96,0,1,0,112.23,223.52V160H88a8,8,0,0,1,0-16h24.23V120a32,32,0,0,1,32-32h24a8,8,0,0,1,0,16H144.23a8,8,0,0,0-8,8v24H168a8,8,0,0,1,0,16H136.23v63.52A96.11,96.11,0,0,0,224,128Z" />
+                            </svg>
+
+                            Continuar com FaceBook
+                        </button>
+                        <button type="button" class="tipos tiposCadastro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
+                                viewBox="0 0 256 256" class="icon">
+                                <path
+                                    d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z">
+                                </path>
+                            </svg>
+                            Continuar com Email
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <img src="img/logo.png" alt="Logo Codevo" class="logoCodevoModal">
+            <div class="modal-content caixaLogin">
+                <div class="modal-header modalsHeader">
+                    <h1 class="modal-title tituloLogin " id="exampleModalToggleLabel">Login</h1>
+                    <button type="button" class="botao" data-bs-dismiss="modal" aria-label="Close">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" class="icone"
+                            viewBox="0 0 256 256">
+                            <defs>
+                                <linearGradient id="gradienteFechar" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FF91D1" />
+                                    <stop offset="100%" stop-color="#FF20EE" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+                                fill="url(#gradienteFechar)" stroke="url(#gradienteFechar)" stroke-width="12"
+                                class="icone" />
+                        </svg>
+                    </button>
+                </div>
+                <div class=" modalsContainer">
+                    <aside class="conteudoLateralLogin">
+                        <form action="">
+                            <label for="email" class="label">Email:</label>
+                            <br>
+                            <input type="text" id="email" class="inputsLogin inputs">
+                            <br>
+                            <label for="senha" class="label">Senha:</label>
+                            <br>
+                            <input type="text" id="senha" class="inputsLogin inputs">
+                            <br>
+                            <div class="divBtn">
+                                <a href="pages/home.html" class=" btnLogin btns">Login</a>
+                                <a href="#" class="links linksLogin"> Esqueci a Senha</a>
+                                <a href="#" class="links linksLogin" data-bs-target="#exampleModalToggle2"
+                                    data-bs-toggle="modal">
+                                    Criar uma
+                                    Conta</a>
+                            </div>
+                        </form>
+                    </aside>
+                    <div class="ladoDireitoLogin">
+                        <button type="button" class="tipos tiposLogin">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
+                                viewBox="0 0 256 256" class="icon">
+                                <path
+                                    d="M228,128a100,100,0,1,1-22.86-63.64,12,12,0,0,1-18.51,15.28A76,76,0,1,0,203.05,140H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128Z">
+                                </path>
+                            </svg>
+
+                            Continuar com o Google
+                        </button>
+                        <button type="button" class="tipos tiposLogin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="" fill="#CDD6F4"
+                                viewBox="0 0 256 256" class="icon">
+                                <path
+                                    d="M224,128A96,96,0,1,0,112.23,223.52V160H88a8,8,0,0,1,0-16h24.23V120a32,32,0,0,1,32-32h24a8,8,0,0,1,0,16H144.23a8,8,0,0,0-8,8v24H168a8,8,0,0,1,0,16H136.23v63.52A96.11,96.11,0,0,0,224,128Z" />
+                            </svg>
+
+                            Continuar com FaceBook
+                        </button>
+                        <button type="button" class="tipos tiposLogin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
+                                viewBox="0 0 256 256" class="icon">
+                                <path
+                                    d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z">
+                                </path>
+                            </svg>
+                            Continuar com Email
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo e slogan -->
+            <div class="footer-logo">
+                <h2>
+                    <img src="img/logo.png" alt="" class="img-logo">
+                </h2>
+                <p style="font-size: 14px; font-family: sans-serif;" align="center">
+                    <span style="color: #28FF93;" align="center">&lt;\Aprenda</span>
+                    <span style="color: white;"> &amp; </span>
+                    <span style="color: #FF2AE9;">compartilhe&gt;</span>
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+                <h3>Ver Mais</h3>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="components/modalContato.html">Contatos</a></li>
+                    <li><a href="pages/cursos.html">Cursos</a></li>
+                </ul>
+            </div>
+
+            <!-- Ações -->
+            <div class="footer-actions">
+                <p align="center"><span class="highlight">Comece já</span> a treinar <span
+                        class="pink">Programação</span></p>
+                <div class="buttons">
+                    <a href="#" class="btn pink">Cadastre-se</a>
+                    <a href="#" class="btn outline">Login</a>
+                </div>
+            </div>
+            <div class="social">
+                <h3>Social</h3>
+                <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#"><i class="ph ph-envelope-simple"></i></a>
+                <a href="#"><i class="ph ph-phone"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Codevo | All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- bootstrap final -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- javascrtip final -->
+    <script src="js/card.js"></script>
+</body>
+
+</html>
