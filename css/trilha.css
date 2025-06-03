@@ -235,25 +235,46 @@ main {
 }
 
 .status {
-    /* background-color: #20FF8A; */
     color: #191932;
     position: absolute;
     z-index: 0;
-    margin-left: 20rem;
-    margin-top: 4rem;
-    width: 10rem;
+    margin-left: 15rem;
+    margin-top: 4.5rem;
+    /* width: 10rem; */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: end;
     font-size: 20px;
     font-weight: 600;
 }
 
+.circuloStatus {
+    position: relative;
+    background: linear-gradient(#6FFFE6, #20FF8A);
+    border-radius: 50%;
+    border: 5px solid #9191B9;
+    /* box-shadow: 0 0 10px #000; */
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCheck {
+    width: 6.5vh;
+}
+
+.nomeStatus {
+    display: flex;
+    flex-direction: column;
+}
+
 .tipos {
     margin-bottom: 0.2rem;
-    background-color: #FFCC4D;
+    background-color: #EBEBFF;
     width: 9.563rem;
-    height: 2rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,28 +282,82 @@ main {
     border-radius: 10px;
 }
 
+.completo {
+    background: linear-gradient(#6FFFE6, #20FF8A);
+}
+
 .emBaixo {
     display: flex;
     align-items: end;
-    height: 99%;
-    width: 17vw;
-    margin-right: 1rem;
+    height: 96%;
+    /* background-color: #FF00A5; */
+    width: 15vw;
 }
 
 .noMeio {
     display: flex;
     align-items: center;
-    height: 99%;
-    width: 17vw;
-    margin-right: 1rem;
+    height: 90%;
+    width: 15vw;
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+    /* background-color: #6FFFE6; */
 }
 
 .noTopo {
     display: flex;
     align-items: start;
-    height: 99%;
-    width: 17vw;
-    margin-right: 1rem;
+    height: 98%;
+    width: 15vw;
+    margin-left: 1rem;
+    /* margin-right: 1rem; */
+    /* background-color: yellow; */
+}
+
+.noTopDois {
+    display: flex;
+    align-items: start;
+    height: 98%;
+    width: 15vw;
+    padding-top: 4rem;
+    margin-left: 1rem;
+    /* margin-right: 1rem;
+    margin-left: 2rem; */
+    /* background-color: blue; */
+}
+
+.noMeioDois {
+    display: flex;
+    align-items: center;
+    height: 85%;
+    width: 15vw;
+    padding-top: 3rem;
+    margin-left: 1rem;
+    /* margin-right: 1rem;
+    margin-left: 2rem; */
+    /* background-color: #6FFFE6;    */
+}
+
+.emBaixoDois {
+    display: flex;
+    align-items: end;
+    height: 90%;
+    width: 15vw;
+    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    /* background-color: #6FFFE6; */
+}
+
+.emBaixoTres {
+    display: flex;
+    align-items: end;
+    height: 64%;
+    width: 15vw;
+    margin-left: 1rem;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    margin-bottom: 2rem;
+    /* background-color: red; */
 }
 
 /* .imagemAula {
