@@ -203,32 +203,30 @@ main {
     height: auto;
     width: 200vw;
     margin-top: 10rem;
-    /* height: 100vh; */
+    height: 100vh;
     box-sizing: border-box;
 }
 
 .grid {
-    /* height: 100%; */
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(10, 150fr);
-    /* 3 colunas iguais */
-    grid-template-rows: repeat(4, 110px);
-    /* 5 linhas de 150px */
-    /* gap: 20px; */
+    grid-template-rows: repeat(4, 140px);
     margin-left: 2rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     margin-right: 2rem;
-    /* height: 100vh; */
+    /* background-color: #FF00A5; */
 }
 
 .bloco {
     background-color: #9191B9;
     border-radius: 50%;
     padding: 1rem;
-    width: 150px;
-    height: 150px;
+    width: 12.5rem;
+    height: 12.5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: #EBEBFF;
     position: relative;
@@ -237,35 +235,27 @@ main {
 .numeroAula {
     position: absolute;
     margin-left: -7rem;
-    margin-top: -1rem;
+    margin-top: -9rem;
     z-index: 2;
-    width: 50%;
+    width: 55%;
 }
 
 .imagemAula {
     position: absolute;
     z-index: 1;
-    width: 80%;
+    width: 90%;
 }
 
 .imagemDois{
     position: absolute;
     z-index: 1;
-    width: 80%;
-    margin-top: 1.2rem;
+    width: 75%;
 }
 
 .imagemTres{
     position: absolute;
     z-index: 1;
-    width: 80%;
-    margin-top: 2rem;
-}
-
-.imagemQuatro{
-    position: absolute;
-    z-index: 1;
-    width: 60%;
+    width: 70%;
     margin-top: 1rem;
 }
 
@@ -273,8 +263,8 @@ main {
     color: #191932;
     position: relative;
     z-index: 2;
-    margin-left: 17rem;
-    margin-top: 8.4rem;
+    margin-left: 19rem;
+    margin-top: 5.5rem;
     display: flex;
     flex-direction: row;
     align-items: end;
@@ -288,23 +278,23 @@ main {
     background: linear-gradient(#6FFFE6, #20FF8A);
     border-radius: 50%;
     border: 5px solid #9191B9;
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-left: -2.5rem;
+    width: 5rem;
+    height: 5rem;
+    margin-left: -2.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imgCheck {
-    width: 6.5vh;
+    width: 78%;
 }
 
 .tipos {
     margin-bottom: 0.2rem;
     background-color: #EBEBFF;
     width: 11rem;
-    height: 3rem;
+    height: 3.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +315,6 @@ main {
     color: #FFFFFF;
 }
 
-/* Posicionamento manual de cada bloco na grade */
 .bloco1 {
     grid-column: 1;
     grid-row: 4;
@@ -334,7 +323,6 @@ main {
 
 .bloco2 {
     grid-column: 2;
-    /* coluna esquerda */
     grid-row: 3;
 }
 
@@ -369,7 +357,6 @@ main {
     grid-row: 2;
     margin-top: 2rem;
     opacity: 0.5;
-    /* margin-left: 9rem; */
 }
 
 .bloco8 {
