@@ -40,7 +40,14 @@ body {
     background-color: #1d2345;
     color: #fff;
     font-size: 1.2rem;
-    margin-top: 2rem;
+}
+
+hr {
+    border-top: 1px solid #9191B9;
+    margin: 15px 0;
+    width: 100%;
+    opacity: 0.6;
+    margin-bottom: 2rem;
 }
 
 .cabecalho {
@@ -48,7 +55,6 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 600;
-    margin-top: 1.5rem;
 }
 
 .cabecalho h2{
@@ -127,16 +133,13 @@ textarea::placeholder {
 
 .divbotao {
     display: flex;
-    justify-content: end;
-    align-items: end;
     flex-direction: row;
+    align-items: center;
     padding: 0.5rem;
     gap: 1.5rem;
     margin-top: 1.5rem;
-    margin-right: 16rem;
     display: flex;
     justify-content: end;
-    width: 960px;
 }
 
 .corbotao {

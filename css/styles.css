@@ -379,3 +379,134 @@ body {
     width: 600px;
     height: auto;
 }
+
+
+.divbotao2 {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: row;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    margin-top: -1.5rem;
+}
+
+.corbotao2 {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    width: 11rem;
+    height: 3rem;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #20FF8A, #6FFFE6) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #EBEBFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+    transition: 1s;
+}
+
+.textobotao2 {
+    color: #EBEBFF;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: none;
+    width: 100%;
+    height: 100%;
+    transition: color 1s;
+}
+
+.corbotao2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #20FF8A, #6FFFE6);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.corbotao2:hover::before {
+    opacity: 1;
+}
+
+.corbotao2:hover {
+    box-shadow: 5px 0 20px #6FFFE6,
+        -5px 0 20px #20FF8A;
+}
+
+.corbotao2 .textobotao2:hover {
+    color: #191932;
+}
+
+/* botao verde acima */
+/* botao rosa abaixo */
+
+.textobotaorosa2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: none;
+    width: 100%;
+    height: 100%;
+    transition: color 1s;
+}
+
+.corbotaorosa2 {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    width: 11rem;
+    height: 3rem;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(45deg, #FF20EE, #FF91D1) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: #EBEBFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+    transition: 1s;
+}
+
+.corbotaorosa2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FF20EE, #FF91D1);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.corbotaorosa2:hover::before {
+    opacity: 1;
+}
+
+.corbotaorosa2:hover {
+    box-shadow: 5px 0 20px #FF91D1,
+        -5px 0 20px #FF20EE;
+}
+
+.corbotaorosa2 .textobotaorosa2:hover {
+    color: #191932;
+} 
