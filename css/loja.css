@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #EBEBFF;
+    background-color: #191932;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    /* background-color: aqua; */
+    min-height: 50vh;
+    /* padding: 2rem; */
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloLoja {
+    font-size: 64px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.Conteudoloja {
+    background-color: #24284F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5rem;
+    border-radius: 20px;
+}
+
+.containerNavLoja {
+    z-index: 2;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60rem;
+}
+
+.onePage{
+    text-decoration: none;
+}
+
+.linhasNav {
+    margin-left: -6rem;
+    background-color: #2B2D59;
+    color: #9191B9;
+    font-size: 32px;
+    font-weight: 600;
+    width: 13.938rem;
+    height: 6.25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 3px solid #161E3A;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.linhasNav:hover {
+    color: #24284F;
+    background: linear-gradient(#FFFFFF, #ADFFF1, #20FF8A);
+    width: 16.438rem;
+    border: 3px solid #FFFFFF;
+    box-shadow: 5px 0 20px #6FFFE6,
+        -5px 0 20px #20FF8A;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    background-color: #323264;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    margin-left: 9rem;
+}
+
+.tituloSecao{
+    /* background-color: pink; */
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 3px solid #CDD6F4;
+    margin-bottom: 2rem;
+}
+
+.conteudoSecao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.caixaImg{
+    background-color: #9292D4;
+    width: 11.75rem;
+    height: 11.75rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.nomeProduto{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.preco{
+    font-size: 32px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-right: 1.5rem;
+}
+
+.vida{
+    position: relative;
+    z-index: 1;
+    width: 8.481rem;
+    height: 7.429rem;
+}
+
+.mais{
+    position: absolute;
+    z-index: 2;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.ticket{
+    width: 9.835rem;
+    height: auto;
+    padding-top: 2rem;
+}
+
+.fogo{
+    width: 8.523rem;
+    height: auto;
+}
