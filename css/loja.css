@@ -4,18 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #EBEBFF;
     background-color: #191932;
     width: 100vw;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
+    overflow-y: hidden;
 }
 
 main {
-    /* background-color: aqua; */
-    min-height: 50vh;
-    /* padding: 2rem; */
     display: flex;
     flex-direction: column;
 }
@@ -25,7 +27,7 @@ main {
     font-weight: 600;
     display: flex;
     justify-content: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .Conteudoloja {
@@ -43,10 +45,10 @@ main {
     position: fixed;
     display: flex;
     justify-content: center;
-    margin-bottom: 60rem;
+    margin-top: 30rem;
 }
 
-.onePage{
+.onePage {
     text-decoration: none;
 }
 
@@ -77,11 +79,15 @@ main {
         -5px 0 20px #20FF8A;
 }
 
-.display{
+
+
+.display {
     display: flex;
     flex-direction: column;
     width: 89%;
     background-color: #323264;
+    overflow-y: scroll;
+    height: 65vh;
     border-radius: 20px;
     margin-top: 2rem;
     padding-top: 2rem;
@@ -90,22 +96,37 @@ main {
     margin-left: 9rem;
 }
 
-.tituloSecao{
-    /* background-color: pink; */
+::-webkit-scrollbar {
+    background-color: #24284F;
+    border: 3px solid #323264;
+    border-radius: 10px;
+    width: 27px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#FF20EE, #FF91D1);
+    border-radius: 10px;
+    border: 6px solid #323264;
+    height: 1px;
+}
+
+
+
+.tituloSecao {
     font-size: 32px;
     font-weight: 600;
     border-bottom: 3px solid #CDD6F4;
     margin-bottom: 2rem;
 }
 
-.conteudoSecao{
+.conteudoSecao {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 2rem;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,7 +134,7 @@ main {
     cursor: pointer;
 }
 
-.caixaImg{
+.caixaImg {
     background-color: #9292D4;
     width: 11.75rem;
     height: 11.75rem;
@@ -126,42 +147,74 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.nomeProduto{
+.nomeProduto {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-.preco{
+.preco {
     font-size: 32px;
     font-weight: 600;
+    /* height: 7vh;
+    width: 9vw; */
     display: flex;
     align-items: center;
     gap: 5px;
     padding-right: 1.5rem;
 }
 
-.vida{
+
+/*Inicio do Ja possui o Produto */
+
+.CoontainerCheck {
+    position: absolute;
+    background: linear-gradient(#20FF8A, #6FFFE6);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    margin-top: 9rem;
+    margin-left: 9rem;
+}
+
+.imageCheck {
+    margin-top: 0.5rem;
+    width: 70%;
+    height: auto;
+}
+
+/* Fim Do Ja Possui o Produto */
+
+.vida {
     position: relative;
     z-index: 1;
     width: 8.481rem;
     height: 7.429rem;
 }
 
-.mais{
+.mais {
     position: absolute;
     z-index: 2;
     margin-top: 3rem;
     margin-left: 3rem;
 }
 
-.ticket{
+.ticket {
     width: 9.835rem;
     height: auto;
     padding-top: 2rem;
 }
 
-.fogo{
+.fogo {
     width: 8.523rem;
+    height: auto;
+}
+
+.visuaisMascotes {
+    width: 10rem;
     height: auto;
 }
