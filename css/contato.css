@@ -42,6 +42,18 @@ body {
     font-size: 1.2rem;
 }
 
+#titulo-email {
+    background-color: #1d2345;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+#titulo-assunto {
+    background-color: #1d2345;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 .cabecalho {
     display: flex;
     justify-content: center;
