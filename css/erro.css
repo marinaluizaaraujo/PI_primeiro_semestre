@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #191932;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Estilização Nav e A barra onde mostra as vidas */
+header {
+    position: fixed;
+    margin-bottom: 2rem;
+    height: 10rem;
+    background-color: #191932;
+}
+
+.navbar {
+    background-color: #323264;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    height: 32px;
+    display: flex;
+    align-items: start;
+    margin-left: 1rem;
+}
+
+.nav-menu {
+    list-style: none;
+    gap: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-link {
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.nav-link:hover {
+    color: #f75ec1;
+}
+
+.nav-link-active {
+    content: '';
+    background: linear-gradient(45deg, #FF00A5, #ff4fc1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.7rem;
+    font-weight: bold;
+    position: relative;
+    text-decoration: underline;
+}
+
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(45deg, #FF00A5, #ff4fc1);
+    border-radius: 2px;
+}
+
+.user-icon {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-right: 5rem;
+}
+
+/* Fim estilização Nav e A barra onde mostra as vidas*/
+
+/* Inicio aula */
+main {
+    padding-top: 13rem;
+    /* padding-left: 2rem; */
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+    color: #EBEBFF;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bolhaUm {
+    position: absolute;
+    z-index: -1;
+    width: 20vw;
+    height: auto;
+    margin-bottom: 20rem;
+}
+
+.bolhaDois {
+    position: absolute;
+    z-index: -1;
+    width: 25vw;
+    height: auto;
+    margin-left: 100rem;
+    margin-top: 27vh;
+    height: auto;
+    /* margin-right: 120vw; */
+    /* background-color: #20FF8A; */
+}
+
+.boxMascote {
+    width: 60%;
+    margin-left: 18rem;
+    display: flex;
+    align-items: center;
+}
+
+.mascoteTriste {
+    width: 30vw;
+    height: auto;
+}
+
+aside {
+    height: 100%;
+    width: 60%;
+    /* background-color: orange; */
+    margin-right: 20rem;
+    /* margin-top: 1rem;     */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 2rem; */
+}
+
+.primeiroTitulo {
+    z-index: 2;
+    font-size: 122px;
+    color: #FF00A5;
+    font-weight: 900;
+}
+
+.segundoTitulo {
+    z-index: 2;
+    font-size: 48px;
+    font-weight: 600;
+    color: #20FF8A;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.terceiroTitulo {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.texto {
+    font-size: 23px;
+    margin-bottom: 3rem;
+}
+
+.btnRetorno {
+    text-decoration: none;
+    background:
+        linear-gradient(#323264, #323264) padding-box,
+        linear-gradient(50deg, #FF20EE, #FF91D1) border-box;
+    color: #FF00A5;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 4rem;
+    transition: 0.7s;
+}
+
+.btnRetorno:hover {
+    background: linear-gradient(#FF20EE, #FF91D1);
+    border: none;
+    color: #191932;
+    font-weight: 600;
+    padding-right: 2rem;
+    box-shadow: 10px 0 30px #FF20EE,
+        -10px 0 30px #FF91D1;
+}

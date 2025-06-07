@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    background-color: #24284F;
+    border: 3px solid #323264;
+    border-radius: 10px;
+    width: 27px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#FF20EE, #FF91D1);
+    border-radius: 10px;
+    border: 8px solid #323264;
+}
+
+#iniciados {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6rem;
+}
+
+.titulo {
+    color: #EBEBFF;
+    display: flex;
+    margin-top: 1.5rem;
+    margin-left: 9rem;
+    font-weight: 600;
+}
+
+#cursos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 6rem;
+}
