@@ -219,6 +219,11 @@ h2 {
 }
 
 .btnsAula {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     position: relative;
     width: 12.5rem;
     height: 4.378rem;
