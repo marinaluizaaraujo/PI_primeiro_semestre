@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="stylesheet" href="../css/nav.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Cadastro - Codevo</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <a href="index.html" class="logoUm">
+                <img src="../img/logo.png" alt="Logo Codevo">
+            </a>
+            <button class="btn  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#f1f1f1" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <a href="../pages/home.html" class="dropdown-item">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/cursos.html" class="dropdown-item">Cursos</a>
+                </li>
+                <li>
+                    <a href="../pages/forum.html" class="dropdown-item">Fórum</a>
+                </li>
+                <li>
+                    <a href="../pages/tutoria.html" class="dropdown-item">Tutoria</a>
+                </li>
+                <li>
+                    <a href="../pages/perfil.html" class="dropdown-item">Perfil</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Logo Codevo">
+            </a>
+            <ul class="nav-menu d-flex mb-0">
+                <li><a href="../pages/home.html" class="nav-link">Home</a></li>
+                <li><a href="../pages/cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="../pages/forum.html" class="nav-link">Fórum</a></li>
+                <li><a href="../pages/tutoria.html" class="nav-link">Tutoria</a></li>
+            </ul>
+
+            <div class="user-icon">
+                <img src="../img/perfil.png" alt="Perfil">
+            </div>
+        </div>
+    </nav>
+
+    <main class="paginaLogin">
+
+        <div class="caixaLogin">
+
+            <header class="header">
+                <h1 class="tituloLogin">Cadastro</h1>
+            </header>
+
+            <div class="container">
+
+                <aside class="conteudoLateralLogin">
+                    <form>
+                        <label for="nome" class="label">Nome:</label>
+                        <br>
+                        <input type="text" id="nome" class="inputsCadastro inputs">
+                        <br>
+                        <label for="emailCadstro" class="label">Email:</label>
+                        <br>
+                        <input type="text" id="emailCadstro" class="inputsCadastro inputs">
+                        <br>
+                        <label for="senhaCadastro" class="label">Senha:</label>
+                        <br>
+                        <input type="text" id="senhaCadastro" class="inputsCadastro inputs">
+                        <br>
+
+                        <div class="divBtn">
+                            <a href="../pages/home.html" class="btnLogin btns">Criar Conta</a>
+                            <a href="login.html" class="links linksLogin" data-bs-target="#exampleModalToggle"
+                                data-bs-toggle="modal">Já Possuo uma Conta</a>
+                        </div>
+                    </form>
+                </aside>
+
+                <div class="ladoDireitoLogin">
+                    <button type="button" class="tipos tiposLogin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
+                            viewBox="0 0 256 256" class="icon">
+                            <path
+                                d="M228,128a100,100,0,1,1-22.86-63.64,12,12,0,0,1-18.51,15.28A76,76,0,1,0,203.05,140H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128Z">
+                            </path>
+                        </svg>
+                        Continuar com o Google
+                    </button>
+
+                    <button type="button" class="tipos tiposLogin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" fill="#CDD6F4" viewBox="0 0 256 256"
+                            class="icon">
+                            <path
+                                d="M224,128A96,96,0,1,0,112.23,223.52V160H88a8,8,0,0,1,0-16h24.23V120a32,32,0,0,1,32-32h24a8,8,0,0,1,0,16H144.23a8,8,0,0,0-8,8v24H168a8,8,0,0,1,0,16H136.23v63.52A96.11,96.11,0,0,0,224,128Z" />
+                        </svg>
+                        Continuar com o Facebook
+                    </button>
+
+                    <button type="button" class="tipos tiposLogin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#CDD6F4"
+                            viewBox="0 0 256 256" class="icon">
+                            <path
+                                d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z">
+                            </path>
+                        </svg>
+                        Continuar com Email
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
