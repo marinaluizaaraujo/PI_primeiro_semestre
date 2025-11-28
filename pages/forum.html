@@ -40,7 +40,7 @@
             </ul>
 
             <div class="user-icon">
-                <img src="../img/perfil.png" alt="Perfil" />
+                <a href="perfil.html" class="nav-link"><img src="../img/perfil.png" alt="Perfil"></a>
             </div>
         </div>
     </nav>
@@ -72,13 +72,14 @@
                             <option>Outro</option>
                         </select>
                     </div>
-                    
+
                     <hr>
 
                     <input type="text" id="titulo" maxlength="50" placeholder="Escreva aqui o título de sua postagem" />
                     <div class="contador" id="contador-titulo">0/50</div>
 
-                    <div id="conteudo" class="editor" contenteditable="true" placeholder="Escreva aqui a sua postagem"></div>
+                    <div id="conteudo" class="editor" contenteditable="true" placeholder="Escreva aqui a sua postagem">
+                    </div>
                     <div class="contador" id="contador-conteudo">0/500</div>
 
                     <div class="barra-ferramentas mt-3 mb-4">
@@ -107,6 +108,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/forum.js"></script>
-</body> 
+</body>
 
 </html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Codevo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css" />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/perfil.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="dropdown">
+            <a href="../index.html" class="logoUm">
+                <img src="../img/logo.png" alt="Logo Codevo">
+            </a>
+            <button class="btn  " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#f1f1f1" viewBox="0 0 256 256">
+                    <path
+                        d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z">
+                    </path>
+                </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <a href="../pages/home.html" class="dropdown-item">Home</a>
+                </li>
+                <li>
+                    <a href="../pages/cursos.html" class="dropdown-item">Cursos</a>
+                </li>
+                <li>
+                    <a href="../pages/forum.html" class="dropdown-item">Fórum</a>
+                </li>
+                <li>
+                    <a href="../pages/tutoria.html" class="dropdown-item">Tutoria</a>
+                </li>
+                <li>
+                    <a href="../pages/perfil.html" class="dropdown-item">Perfil</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="../img/logo.png" alt="Logo Codevo">
+            </a>
+            <ul class="nav-menu d-flex mb-0">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="cursos.html" class="nav-link">Cursos</a></li>
+                <li><a href="forum.html" class="nav-link">Fórum</a></li>
+                <li><a href="tutoria.html" class="nav-link">Tutoria</a></li>
+            </ul>
+
+            <div class="user-icon">
+                <a href="perfil.html" class="nav-link">
+                    <img src="../img/perfil.png" alt="Perfil">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-page">
+
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Meu Perfil</h3>
+            <div class="user-info-sidebar">
+                <div class="profile-pic-sidebar">
+                    <i class="ph ph-user" style="font-size: 4rem; color: #FF00A5;"></i>
+                </div>
+                <p class="user-name">Fulano da Silva</p>
+                <p class="user-handle">@fulanosilva</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active-item">
+                    <i class="ph-fill ph-house-simple"></i> Painél Principal
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph-fill ph-book-open"></i> Meus Cursos
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph-fill ph-archive-box"></i> Inventário
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph-fill ph-gear"></i> Configurações
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="ph-fill ph-question"></i> Ajuda
+                </a>
+            </nav>
+            <button class="logout-btn">
+                <i class="ph-fill ph-sign-out"></i> Desconectar-se
+            </button>
+        </aside>
+
+        <main class="profile-content">
+            <section class="personal-info-card">
+                <div class="info-group">
+                    <label>Nome:</label>
+                    <input type="text" value="Fernando da Silva">
+                </div>
+                <div class="info-group">
+                    <label>Nome de Usuário:</label>
+                    <input type="text" value="@fulanosilva">
+                </div>
+                <div class="info-group bio-group">
+                    <label>Biografia do Perfil:</label>
+                    <textarea>Olá me chamo Fulano da Silva! Eu gosto de programação web Front-End. Curso DSM na FATEC Indaiatuba e estou no 3° Semestre Busco ser um programador Full-Stack.
+                    </textarea>
+                </div>
+                <div class="info-group">
+                    <label>Email:</label>
+                    <input type="email" value="fernandodasilva@email.com">
+                </div>
+                <div class="info-group">
+                    <label>Senha:</label>
+                    <input type="password" value="********">
+                </div>
+                <div class="info-group">
+                    <label>Celular:</label>
+                    <input type="tel" value="+55 (12) 34567-8910" readonly>
+                </div>
+                <div class="actions">
+                    <button class="action-btn-cancelar">Cancelar Alteração</button>
+                    <button class="action-btn-salvar">Salvar Alteração</button>
+                </div>
+            </section>
+
+            <aside class="right-column">
+                <div class="stack-card">
+                    <div class="radar-chart-container">
+                        <h1 class="title">
+                            <span class="title-s">S</span>tack <span class="title-p">P</span>essoal
+                        </h1>
+
+                        <svg id="radarChart" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet"></svg>
+
+                        <div class="labels">
+                            <div class="label back-end">Back-End</div>
+                            <div class="label front-end">Front-End</div>
+                            <div class="label bd">Banco de Dados</div>
+                            <div class="label redes">Redes</div>
+                            <div class="label os">Sistemas Operacionais</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="highlighted-subjects-card">
+                    <h3 class="card-title">Matérias Destacadas</h3>
+                    <div class="subjects-list">
+                        <a href="#" class="subject-tag complete">JAVASCRIPT **COMPLETO**</a>
+                        <a href="#" class="subject-tag in-progress">HTML **Em Andamento.**</a>
+                        <a href="#" class="subject-tag in-progress">CSS **Em Andamento.**</a>
+                        <a href="#" class="subject-tag in-progress">Python **Em Andamento.**</a>
+                    </div>
+                </div>
+
+                <div class="favorite-subject-card">
+                    <h3 class="card-title favorite-title">Matéria Favorita</h3>
+                    <div class="favorite-content">
+                        <h2 class="favorite-name">JavaScript <span class="badge">Front-End</span></h2>
+                        <ul class="stats-list">
+                            <li class="linhaDados"><span class="dadosFavoritocard">29</span> Trilhas Concluídas.</li>
+                            <li class="linhaDados"><span class="dadosFavoritocard">03</span>Trilhas completas.</li>
+                            <li class="linhaDados"><span class="dadosFavoritocard">71</span> Horas Dedicadas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="../js/perfil.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
